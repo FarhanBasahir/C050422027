@@ -1,0 +1,35 @@
+html , body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+}
+
+#box {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+}
+
+#header {
+  background-color: #dfd5d5;
+  padding: 20px;
+}
+
+#menubar {
+  background-color: #e4e4e4;
+}
+
+.teksmenu {
+  text-decoration: none;
+}
+
+#konten {
+  padding: 20px;
+}
+
+#footer {
+  background-color: #999494;
+}
