@@ -1,13 +1,13 @@
-html , body {
+html, body{
   margin: 0;
   padding: 0;
 }
 
-p {
-  text-align: center;
+p{
+  text-align: justify;
 }
 
-#box {
+#box{
   width: 1000px;
   height: auto;
   margin: auto;
@@ -20,6 +20,7 @@ p {
 
 #menubar {
   background-color: #e4e4e4;
+  margin: auto;
 }
 
 .teksmenu {
@@ -32,4 +33,5 @@ p {
 
 #footer {
   background-color: #999494;
+  padding: 20px;
 }
