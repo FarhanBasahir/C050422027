@@ -4,59 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Korean Street Foodcourt</title>
+  <link rel="stylesheet" href="style.css">\
 </head>
 <body>
+<div id="box">
 
-  <header style="text-align: center; background-size: cover;">
-    <h3>Korean Street Foodcourt</h3>
-    <img src="StreetFood.png" alt="Korean Street Foodcourt" width="500px">
-  </header>
-  <br>
-
-  <div>
-    <table border="1" cellspacing="0" cellpadding="10" style="margin: 0 auto">
-      <caption>Menu Makanan</caption>
-        <tr>
-          <th>Nama</th>
-          <th>Harga</th>
-          <th>Gambar</th>
-        </tr>
-        <tr>
-          <td>Bibimbap</td>
-          <td>Rp15.000</td>
-          <td><img src="Bibimbap.jpg" alt="Bibimbap" width="200px"></td>
-        </tr>
-        <tr>
-          <td>Bulgogi</td>
-          <td>Rp15.000</td>
-          <td><img src="Bulgogi.jpg" alt="Bulgogi" width="200px"></td>
-        </tr>
-        <tr>
-          <td>Gimbap</td>
-          <td>Rp15.000</td>
-          <td><img src="Gimbap.jpg" alt="Gimbap" width="200px"></td>
-        </tr>
-        <tr>
-          <td>Kimchi</td>
-          <td>Rp15.000</td>
-          <td><img src="Kimchi.jpeg" alt="Kimchi" width="200px"></td>
-        </tr>
-        <tr>
-          <td>Ramyeon</td>
-          <td>Rp20.000</td>
-          <td><img src="Ramyeon.jpeg" alt="Ramyeon" width="200px"></td>
-        </tr>
-        <tr>
-          <td>Tteokbokki</td>
-          <td>Rp20.000</td>
-          <td><img src="Tteokbokki.jpg" alt="Tteokbokki" width="200px"></td>
-        </tr>
-    </table>
+  <div id="header">
+    <h3 class="namacourt">Korean Street Foodcourt</h3>
+    <p class="alamat">Jl. Brigjen Hasan Basri No.184, Pangeran, Kecamatan Banjarmasin Utara, Kota Banjarmasin.</p>
   </div>
-    
-  <footer style="text-align: center;">
-    <p>Kunjungi <a href="">Korean Street Foodcourt</a></p>
-    <p>Copyright Farhan</p>
+
+  <div id="menubar">
+    <a class="navbar" href="Dashboard">Dashboard</a> |
+    <a class="navbar" href="Menu Lengkap">Menu Lengkap</a> |
+    <a class="navbar" href="Order">Order</a> |
+    <a class="navbar" href="Kontak">Kontak</a>
+  </div>
+
+  <img id="spanduk" src="StreetFood.png" alt="StreetFood">
+
+  <div id="konten">
+    <p class="wellcome">Selamat datang di Food Court Korea Rasa Asli</p>
+    <p>Mari nikmati pengalaman kuliner Korea yang autentik dan memikat di dalam hati kota ini. Kami telah menyajikan kelezatan Korea yang tak tertandingi dengan cinta dan keterampilan dari para koki berbakat kami.</p>
+  </div>
+  
+    <table border="1" cellspacing="1" cellpadding="25" style="margin: 0 auto">
+      <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Gambar</th>
+      </tr>
+      <tr>
+        <td>Bibimbap</td>
+        <td>Rp15.000</td>
+        <td><img src="Bibimbap.jpg" alt="Bibimbap" margin="auto" width="300px"></td>
+      </tr>
+      <tr>
+        <td>Gimbap</td>
+        <td>Rp15.000</td>
+        <td><img src="Gimbap.jpg" alt="Gimbap" margin="auto" width="300px"></td>
+      </tr>
+      <tr>
+        <td>Kimchi</td>
+        <td>Rp15.000</td>
+        <td><img src="Kimchi.jpeg" alt="Kimchi" margin="auto" width="300px"></td>
+      </tr>
+      <tr>
+        <td>Tteokbokki</td>
+        <td>Rp20.000</td>
+        <td><img src="Tteokbokki.jpg" alt="Tteokbokki" margin="auto" width="300px"></td>
+      </tr>
+  </table>
+
+  <footer id="footer">
+    <p>Kunjungi <a class="copyright" href="Korean Street Food">Korean Street Foodcourt</a></p>
+    <p class="farhan">Copyright Farhan</p>
   </footer>
+</div>
+  
 </body>
 </html>

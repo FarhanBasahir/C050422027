@@ -1,0 +1,97 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#box {
+  background-color: #FFD369;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  background-position: center;
+}
+
+#header {
+  background-color: #222831;
+  color: #FFD369;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.namacourt {
+  font-family: ;
+}
+
+.alamat{
+  font-size: 15px;
+  
+}
+
+#menubar {
+  background-color: #393E46;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 5px;
+}
+
+#spanduk{
+  margin: 0;
+  width: 100%;
+}
+
+.wellcome {
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFD369;
+}
+
+.navbar{
+  text-decoration: none;
+  color: white;
+}
+
+#copyright{
+  color: black;
+}
+
+#konten {
+  margin: 50px;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+}
+
+table {
+  background-color: ;
+  text-align: center;
+  font-size: 20px;
+}
+
+#footer {
+  margin-top: 15px;
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #222831;
+  color: white;
+}
+
+.farhan{
+  font-weight: bold;
+  color: #FFD369;
+}
+
+.copyright{
+  text-decoration: none;
+  color: white;
+}
+
