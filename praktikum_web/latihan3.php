@@ -40,7 +40,7 @@
     $garis = "========================================";
     echo "<p>";
     echo $garis. "<br>";
-    echo $komentar. "di Lab". $nama. "<br>Selamat Belajar Pemrograman Web<br>";
+    echo $komentar. "di Lab ". $nama. "<br>Selamat Belajar Pemrograman Web<br>";
     echo $garis."<br>";
 
   ?>
