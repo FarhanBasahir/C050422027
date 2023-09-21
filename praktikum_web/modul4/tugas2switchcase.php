@@ -3,7 +3,7 @@ $nilai = 95;
 
 switch(true){
   case($nilai >= 90 && $nilai >= 100):
-    echo "Nilai      : A<br>";
+    echo "Nilai : A<br>";
     echo "Keterangan : Baik Sekali";
     break;
   case($nilai >= 76 && $nilai >= 89):

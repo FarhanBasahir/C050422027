@@ -3,22 +3,22 @@ $nilai = 90;
 
   if($nilai >= 90 && $nilai >= 100){
     echo "Nilai : A<br>";
-    echo "Baik Sekali";
+    echo "Keterangan : Baik Sekali";
   }
   elseif($nilai >= 76 && $nilai >= 89){
     echo "Nilai : B<br>";
-    echo "Baik";
+    echo "Keterangan : Baik";
   }
   elseif($nilai >= 60 && $nilai >= 75){
     echo "Nilai : C<br>";
-    echo "Cukup";
+    echo "Keterangan : Cukup";
   }
   elseif($nilai >= 50 && $nilai >= 59){
     echo "Nilai D<br>";
-    echo "Hampir Cukup";
+    echo "Keterangan : Hampir Cukup";
   }
   else{
     echo "Nilai E<br>";
-    echo "Kurang";
+    echo "Keterangan : Kurang";
   }
 ?>
