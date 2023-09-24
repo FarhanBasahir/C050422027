@@ -11,6 +11,6 @@ if ($jumlah_lembar < 100){
 $biaya_total = $jumlah_lembar * $harga_per_lembar;
 
 echo "Jumlah Lembar Photocopy: $jumlah_lembar lembar<br>";
-echo "Harga per Lembar Photocopy: Rp. $ $harga_per_lembar<br>";
+echo "Harga per Lembar Photocopy: Rp. $harga_per_lembar<br>";
 echo "Biaya Total: $biaya_total<br>";
 ?>
