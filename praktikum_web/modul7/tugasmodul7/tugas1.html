@@ -7,109 +7,124 @@
       Biodata Mahasiswa Politeknik Negeri Banjarmasin Jurusan Teknik Elektro
     </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h2>
-      Biodata Mahasiswa Politeknik Negeri Banjarmasin Jurusan Teknik Elektro
-    </h2>
 
-    <form id="form" name="form" action="tugas1.php" method="post">
-      <table border="1" cellspacing="0" cellpadding="" style="margin: auto">
-        <tr>
-          <!-- Input Text -->
-          <td>
-            <label for="Nama">Nama :</label>
-          </td>
-          <td>
-            <input type="text" name="nama" id="nama" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="NIM">NIM :</label>
-          </td>
-          <td>
-            <input type="text" name="nim" id="nim" />
-          </td>
-        </tr>
-        <tr>
-          <!-- Input Radio -->
-          <td>
-            <label for="Jenis Kelamin">Jenis Kelamin :</label>
-          </td>
-          <td>
-            <input
-              id="gender"
-              type="radio"
-              name="gender"
-              value="Laki-laki"
-            />Laki-laki
-            <input
-              id="gender"
-              type="radio"
-              name="gender"
-              value="Perempuan"
-            />Perempuan
-          </td>
-        </tr>
-        <tr>
-          <!-- Input CheckBox -->
-          <td>
-            <label for="Bahasa">Bahasa :</label>
-          </td>
-          <td>
-            <input
-              id="bahasa"
-              type="checkbox"
-              name="Indonesia"
-              value="Indonesia"
-            />Indonesia
-            <input
-              id="bahasa"
-              type="checkbox"
-              name="Inggris"
-              value="Inggris"
-            />Inggris
-          </td>
-        </tr>
-        <tr>
-          <!-- Input ComboBox -->
-          <td>
-            <label for="Prodi">Program Studi :</label>
-          </td>
-          <td>
-            <select name="prodi" id="prodi">
-              <option value="Teknik Listrik">Teknik Listrik</option>
-              <option value="Elektronika">Elektronika</option>
-              <option value="Teknik Informatika">Teknik Informatika</option>
-              <option value="Teknik Rekayasa Pembangkit Energi">
-                Teknik Rekayasa Pembangkit Energi
-              </option>
-              <option value="Sistem Informasi Kota Cerdas">
-                Sistem Informasi Kota Cerdas
-              </option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <!-- Input Text Area -->
-          <td><label for="komentar">Komentar :</label><br /></td>
-          <td>
-            <textarea
-              name="komentar"
-              id="komentar"
-              cols="50"
-              rows="4"
-            ></textarea>
-          </td>
-        </tr>
-        <tr>
-          <!-- Submit -->
-          <td colspan="2">
-            <input type="submit" name="submit" id="submit" value="Submit" />
-          </td>
-        </tr>
-      </table>
-    </form>
+  <body>
+    <header id="header">
+      <h2 class="head-text">
+        Biodata Mahasiswa Politeknik Negeri Banjarmasin <br />
+        Jurusan Teknik Elektro
+      </h2>
+      <p class="side-text">
+        Isi formulir dibawah ini sesuai dengan Kartu Tanda Mahasiswa (KTM) :
+      </p>
+    </header>
+
+    <article>
+      <form id="form" name="form" action="tugas1.php" method="post">
+        <table border="1" cellspacing="0" cellpadding="" style="margin: auto">
+          <tr>
+            <!-- Input Text -->
+            <td>
+              <label for="Nama">Nama :</label>
+            </td>
+            <td>
+              <input type="text" name="nama" id="nama" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="NIM">NIM :</label>
+            </td>
+            <td>
+              <input type="text" name="nim" id="nim" />
+            </td>
+          </tr>
+          <tr>
+            <!-- Input Radio -->
+            <td>
+              <label for="Jenis Kelamin">Jenis Kelamin :</label>
+            </td>
+            <td>
+              <input
+                id="gender"
+                type="radio"
+                name="gender"
+                value="Laki-laki"
+              />Laki-laki
+              <input
+                id="gender"
+                type="radio"
+                name="gender"
+                value="Perempuan"
+              />Perempuan
+            </td>
+          </tr>
+          <tr>
+            <!-- Input CheckBox -->
+            <td>
+              <label for="Bahasa">Bahasa :</label>
+            </td>
+            <td>
+              <input
+                id="bahasa"
+                type="checkbox"
+                name="Indonesia"
+                value="Indonesia"
+              />Indonesia
+              <input
+                id="bahasa"
+                type="checkbox"
+                name="Inggris"
+                value="Inggris"
+              />Inggris
+            </td>
+          </tr>
+          <tr>
+            <!-- Input ComboBox -->
+            <td>
+              <label for="Prodi">Program Studi :</label>
+            </td>
+            <td>
+              <select name="prodi" id="prodi">
+                <option value="Teknik Listrik">Teknik Listrik</option>
+                <option value="Elektronika">Elektronika</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Rekayasa Pembangkit Energi">
+                  Teknik Rekayasa Pembangkit Energi
+                </option>
+                <option value="Sistem Informasi Kota Cerdas">
+                  Sistem Informasi Kota Cerdas
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <!-- Input Text Area -->
+            <td><label for="komentar">Komentar :</label><br /></td>
+            <td>
+              <textarea
+                name="komentar"
+                id="komentar"
+                cols="50"
+                rows="4"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <!-- Submit -->
+            <td colspan="2">
+              <input type="submit" name="submit" id="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </article>
   </body>
 </html>

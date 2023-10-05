@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selamat Datang di POLIBAN</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, "Times New Roman", Times, serif;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <h2 style="text-align: center">Selamat Datang Mahasiswa Politeknik Negeri Banjarmasin Jurusan Teknik Elektro</h2>
