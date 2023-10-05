@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#form {
+  padding-top: 1rem;
+  display: block;
+}
+
+td {
+  padding: 5px;
+  margin: 5px;
+}
+
+#nama {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#nim {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#gender {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#bahasa {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#prodi {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#komentar {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+}
