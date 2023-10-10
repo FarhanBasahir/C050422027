@@ -5,7 +5,7 @@
       echo "User Name dan Password masih kosong"; 
       session_destroy();
 
-    }else{
+      }else{
       //user = "johan" password = "bengbeng123"
       if(($_POST['nama']=="johan") and ($_POST['pass']=="bengbeng123")){
         $_SESSION['login']=1;
@@ -13,12 +13,12 @@
 
       }
 
-    if ((isset($_SESSION['login'])) and ($_SESSION['login']==1)){
+      if ((isset($_SESSION['login'])) and ($_SESSION['login']==1)){
       header("location: submit_formlogin.php");
       exit();
+      }
     }
-    }
-    }
+  }
 
 ?>
 
