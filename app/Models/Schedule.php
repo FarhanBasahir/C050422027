@@ -3,19 +3,21 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use App\Models\Model;
 
 class Schedule extends Model
 {
-    use HasFactory;
-
-    public function subject()
-    {
-        return $this->belongsTo(Subject::class);
-    }
-
-    public function student()
-    {
-        return $this->belongsTo(User::class);
-    }
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'subject_id',
+        'hari',
+        'jam_mulai',
+        'jam_selesai',
+        'ruangan',
+    ];
 }

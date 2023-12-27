@@ -12,6 +12,20 @@ class ScheduleSeeder extends Seeder
      */
     public function run(): void
     {
-        Schedule::factory(20)->create();
+        Schedule::factory(30)->create();
+
+        Schedule::create([
+            'subject_id' => '1',
+            'hari' => 'Senin',
+            'jam_mulai' => '11.20',
+            'jam_selesai' => '17.00',
+            'ruangan' => 'UPT. TIK',
+            'kode_absensi' => 'C050422027',
+            'tahun_akademik' => '2023',
+            'semester' => 'Ganjil',
+            'updated_by' => 'Farhan',
+            'created_by' => 'Farhan',
+            'deleted_by' => 'Farhan',
+        ]);
     }
 }

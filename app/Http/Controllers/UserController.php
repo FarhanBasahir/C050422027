@@ -46,7 +46,7 @@ class UserController extends Controller
             'address' => $request['address'],
         ]);
 
-        return redirect(route('user.index'))->with('success', 'data berhasil disimpan');
+        return redirect(route('user.index'))->with('success', 'Create New User Successfully');
     }
 
     public function edit(User $user)
