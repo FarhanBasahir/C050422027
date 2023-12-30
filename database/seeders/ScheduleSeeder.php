@@ -20,7 +20,7 @@ class ScheduleSeeder extends Seeder
             'jam_mulai' => '11.20',
             'jam_selesai' => '17.00',
             'ruangan' => 'UPT. TIK',
-            'kode_absensi' => 'C050422027',
+            'kode_absensi' => '1',
             'tahun_akademik' => '2023',
             'semester' => 'Ganjil',
             'updated_by' => 'Farhan',

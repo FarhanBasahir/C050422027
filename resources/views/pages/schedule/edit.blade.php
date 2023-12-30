@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Schedule')
+@section('title', 'Edit Schedules')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -21,8 +21,9 @@
             <div class="section-body">
 
                 <div class="card">
-                    <form action="{{ route('schedule.store') }}" method="POST">
+                    <form action="{{ route('schedule.update', $schedule) }}" method="POST">
                         @csrf
+                        @method('PUT')
                         <div class="card-header">
                             <h4>Edit Schedules</h4>
                         </div>
@@ -33,7 +34,7 @@
                                     class="form-control @error('subject_id')
                                     is-invalid
                                 @enderror"
-                                    name="subject_id">
+                                    name="subject_id" value="{{ $schedule->subject_id }}">
                                 @error('subject_id')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -46,7 +47,7 @@
                                     class="form-control @error('hari')
                                     is-invalid
                                 @enderror"
-                                    name="hari">
+                                    name="hari" value="{{ $schedule->hari }}">
                                 @error('hari')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -59,7 +60,7 @@
                                     class="form-control @error('jam_mulai')
                                     is-invalid
                                 @enderror"
-                                    name="jam_mulai">
+                                    name="jam_mulai" value="{{ $schedule->jam_mulai }}">
                                 @error('jam_mulai')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -72,7 +73,7 @@
                                     class="form-control @error('jam_selesai')
                                     is-invalid
                                 @enderror"
-                                    name="jam_selesai">
+                                    name="jam_selesai" value="{{ $schedule->jam_selesai }}">
                                 @error('jam_selesai')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -85,7 +86,7 @@
                                     class="form-control @error('ruangan')
                                     is-invalid
                                 @enderror"
-                                    name="ruangan">
+                                    name="ruangan" value="{{ $schedule->ruangan }}">
                                 @error('ruangan')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -107,6 +108,5 @@
 
 @push('scripts')
     <!-- JS Libraies -->
-
     <!-- Page Specific JS File -->
 @endpush

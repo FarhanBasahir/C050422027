@@ -7,8 +7,6 @@ use App\Http\Requests\UpdateScheduleRequest;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-
 class ScheduleController extends Controller
 {
     public function index(Request $request)
@@ -50,6 +48,11 @@ class ScheduleController extends Controller
     public function edit(Schedule $schedule)
     {
         return view('pages.schedule.edit')->with('schedule', $schedule);
+    }
+
+    public function show (string $id)
+    {
+        //
     }
 
     public function update(UpdateScheduleRequest $request, Schedule $schedule)

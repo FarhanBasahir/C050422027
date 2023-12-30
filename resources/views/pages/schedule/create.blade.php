@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'New Schedule')
+@section('title', 'New Schedules')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -19,9 +19,8 @@
             </div>
 
             <div class="section-body">
-
                 <div class="card">
-                    <form action="{{ route('user.store') }}" method="POST">
+                    <form action="{{ route('schedule.store') }}" method="POST">
                         @csrf
                         <div class="card-header">
                             <h4>New Schedules</h4>
@@ -92,7 +91,6 @@
                                     </div>
                                 @enderror
                             </div>
-                            
                         </div>
                         <div class="card-footer text-right">
                             <button class="btn btn-primary">Submit</button>
@@ -107,6 +105,5 @@
 
 @push('scripts')
     <!-- JS Libraies -->
-
     <!-- Page Specific JS File -->
 @endpush

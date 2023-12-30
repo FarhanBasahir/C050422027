@@ -33,13 +33,13 @@
                             <div class="card-header">
                                 <h4>All Subjects</h4>
                                 <div class="section-header-button">
-                                    <a href="{{ route('user.create') }}" class="btn btn-primary">New Scehdules</a>
+                                    <a href="{{ route('subject.create') }}" class="btn btn-primary">New Subjects</a>
                                 </div>
                             </div>
                             <div class="card-body">
 
                                 <div class="float-right">
-                                    <form method="GET", action="{{ route('schedule.index') }}">
+                                    <form method="GET", action="{{ route('subject.index') }}">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search" name="name">
                                             <div class="input-group-append">
@@ -50,7 +50,6 @@
                                 </div>
 
                                 <div class="clearfix mb-3"></div>
-
                                 <div class="table-responsive">
                                     <table class="table-striped table">
                                         <tr>

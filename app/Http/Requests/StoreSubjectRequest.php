@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreScheduleRequest extends FormRequest
+class StoreSubjectRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,11 +22,8 @@ class StoreScheduleRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'subject_id' => 'required|string',
-            'hari' => 'required|string',
-            'jam_mulai' => 'string',
-            'jam_selesai' => 'string',
-            'ruangan' => 'string',
+            'title' => 'required|string',
+            'lecturer_id' => 'required|string',
         ];
     }
 }

@@ -18,12 +18,12 @@ return new class extends Migration
             $table->string('jam_mulai');
             $table->string('jam_selesai');
             $table->string('ruangan');
-            $table->string('kode_absensi');
-            $table->string('tahun_akademik');
-            $table->string('semester');
-            $table->string('created_by');
-            $table->string('updated_by');
-            $table->string('deleted_by');
+            $table->string('kode_absensi')->default('default_value');
+            $table->string('tahun_akademik')->default('default_value');
+            $table->string('semester')->default('default_value');
+            $table->string('created_by')->default('default_value');
+            $table->string('updated_by')->default('default_value');
+            $table->string('deleted_by')->default('default_value');
             $table->timestamps();
         });
     }
