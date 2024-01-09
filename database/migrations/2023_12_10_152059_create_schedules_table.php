@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('updated_by')->default('default_value');
             $table->string('deleted_by')->default('default_value');
             $table->timestamps();
+
+            $table->foreign('subject_id', 'subjectid_foreign')->references('id')->on('subjects');
         });
     }
 

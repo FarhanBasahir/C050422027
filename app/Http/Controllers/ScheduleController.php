@@ -11,13 +11,14 @@ class ScheduleController extends Controller
 {
     public function index(Request $request)
     {
-        $schedules = DB::table('schedules')
+        $schedules = Schedule::with('subject')
         ->when($request->input('subject_id'), function ($query, $subject_id) {
             return $query->where('subject_id', 'like', '%' . $subject_id . '%');
         })
-        ->select('id', 'subject_id', 'hari', 'jam_mulai', 'jam_selesai','ruangan')
+        ->select('id', 'subject_id','subject_id', 'hari', 'jam_mulai', 'jam_selesai','ruangan')
         ->orderBy('id', 'asc')
-        ->paginate(15);
+        ->paginate(10);
+
         return view ('pages.schedule.index', compact('schedules'));
     }
 

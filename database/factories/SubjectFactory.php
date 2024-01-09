@@ -17,8 +17,9 @@ class SubjectFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->name(),
-            'lecturer_id' => 3,
+            'title' => $this->faker->randomElement(['Pemrograman Berbasis Objek','Pemrograman Berbasis Web','Rekayasa Perangkat Lunak',
+            'Pemodelan Proses Bisnis','Dasar Pengembangan SIKC','Struktur Data','Administrasi Jaringan','Administrasi Basis Data']),
+            'lecturer_id' => $this->faker->randomElement(['1','2','3','4','5','6','7','8']),
         ];
     }
 }

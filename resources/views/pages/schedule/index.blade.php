@@ -69,7 +69,7 @@
                                                     {{ $schedule->id }}
                                                 </td>
                                                 <td>
-                                                    {{ $schedule->subject_id }}
+                                                    {{ $schedule->subject->title }}
                                                 </td>
                                                 <td>
                                                     {{ $schedule->hari }}
