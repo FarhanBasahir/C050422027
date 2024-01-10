@@ -19,7 +19,6 @@
             </div>
 
             <div class="section-body">
-
                 <div class="card">
                     <form action="{{ route('schedule.update', $schedule) }}" method="POST">
                         @csrf

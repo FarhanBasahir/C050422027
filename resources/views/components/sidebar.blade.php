@@ -40,5 +40,13 @@
                     </li>
                 </ul>
             </li> 
+            <li class="nav-item dropdown ">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Register</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ route('register.index') }}">Register List</a>
+                    </li>
+                </ul>
+            </li> 
     </aside>
 </div>
